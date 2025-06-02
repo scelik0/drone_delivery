@@ -1,0 +1,3043 @@
+   			CSS KODLARI
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+
+
+
+------------------------------------------------------------------------------------------
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+
+-------------------------------------------------------------------
+
+
+   		ALGORİTMA
+
+
+
+
+
+export class AStarAlgorithm {
+  constructor(drones, deliveries, noFlyZones) {
+    this.drones = drones
+    this.deliveries = deliveries
+    this.noFlyZones = noFlyZones
+  }
+
+  calculateDistance(pos1, pos2) {
+    return Math.sqrt(Math.pow(pos1[0] - pos2[0], 2) + Math.pow(pos1[1] - pos2[1], 2))
+  }
+
+  isInNoFlyZone(pos, time) {
+    return this.noFlyZones.some((zone) => {
+      if (time < zone.active_time[0] || time > zone.active_time[1]) return false
+
+      const x = pos[0],
+        y = pos[1]
+      let inside = false
+      const coords = zone.coordinates
+
+      for (let i = 0, j = coords.length - 1; i < coords.length; j = i++) {
+        if (
+          coords[i][1] > y !== coords[j][1] > y &&
+          x < ((coords[j][0] - coords[i][0]) * (y - coords[i][1])) / (coords[j][1] - coords[i][1]) + coords[i][0]
+        ) {
+          inside = !inside
+        }
+      }
+      return inside
+    })
+  }
+
+  heuristic(currentPos, targetPos, priority) {
+    const distance = this.calculateDistance(currentPos, targetPos)
+    const priorityBonus = (6 - priority) * 5
+    return distance + priorityBonus
+  }
+
+  findOptimalRoute() {
+    const routes = {}
+    const assignedDeliveries = new Set()
+    let totalDistance = 0
+    let energyConsumption = 0
+
+    // Öncelik sırasına göre teslimatları sırala
+    const sortedDeliveries = [...this.deliveries].sort((a, b) => b.priority - a.priority)
+
+    // Her drone için başlangıç durumu
+    const droneStates = this.drones.map((drone) => ({
+      ...drone,
+      currentPos: drone.start_pos,
+      currentLoad: 0,
+      currentTime: 0,
+    }))
+
+    for (const delivery of sortedDeliveries) {
+      if (assignedDeliveries.has(delivery.id)) continue
+
+      let bestDrone = null
+      let bestCost = Number.POSITIVE_INFINITY
+
+      for (const drone of droneStates) {
+        // Kapasite kontrolü
+        if (drone.currentLoad + delivery.weight > drone.max_weight) continue
+
+        // Zaman penceresi kontrolü
+        const travelTime = this.calculateDistance(drone.currentPos, delivery.pos) / drone.speed
+        const arrivalTime = drone.currentTime + travelTime
+
+        if (arrivalTime > delivery.time_window[1]) continue
+
+        // Yasak bölge kontrolü
+        if (this.isInNoFlyZone(delivery.pos, arrivalTime)) continue
+
+        // A* heuristik maliyeti
+        const cost = this.heuristic(drone.currentPos, delivery.pos, delivery.priority)
+
+        if (cost < bestCost) {
+          bestCost = cost
+          bestDrone = drone
+        }
+      }
+
+      if (bestDrone) {
+        if (!routes[bestDrone.id]) routes[bestDrone.id] = []
+        routes[bestDrone.id].push(delivery.id)
+
+        const distance = this.calculateDistance(bestDrone.currentPos, delivery.pos)
+        totalDistance += distance
+        energyConsumption += distance * delivery.weight * 0.1
+
+        // Drone durumunu güncelle
+        bestDrone.currentPos = delivery.pos
+        bestDrone.currentLoad += delivery.weight
+        bestDrone.currentTime += distance / bestDrone.speed
+
+        assignedDeliveries.add(delivery.id)
+      }
+    }
+
+    return {
+      routes,
+      totalDistance,
+      completedDeliveries: assignedDeliveries.size,
+      energyConsumption,
+    }
+  }
+}
+
+// CSP Algoritması Implementasyonu
+export class CSPAlgorithm {
+  constructor(drones, deliveries, noFlyZones) {
+    this.drones = drones
+    this.deliveries = deliveries
+    this.noFlyZones = noFlyZones
+    this.variables = deliveries.map((d) => d.id)
+    this.domains = {}
+    this.constraints = []
+
+    this.initializeDomains()
+    this.initializeConstraints()
+  }
+
+  initializeDomains() {
+    this.variables.forEach((deliveryId) => {
+      const delivery = this.deliveries.find((d) => d.id === deliveryId)
+      this.domains[deliveryId] = this.drones
+        .filter((drone) => drone.max_weight >= delivery.weight)
+        .map((drone) => drone.id)
+    })
+  }
+
+  initializeConstraints() {
+    // Kapasite kısıtı
+    this.constraints.push({
+      type: "capacity",
+      check: (assignment) => {
+        const droneLoads = {}
+
+        Object.entries(assignment).forEach(([deliveryId, droneId]) => {
+          const delivery = this.deliveries.find((d) => d.id === Number.parseInt(deliveryId))
+          droneLoads[droneId] = (droneLoads[droneId] || 0) + delivery.weight
+        })
+
+        return Object.entries(droneLoads).every(([droneId, load]) => {
+          const drone = this.drones.find((d) => d.id === Number.parseInt(droneId))
+          return load <= drone.max_weight
+        })
+      },
+    })
+
+    // Zaman penceresi kısıtı
+    this.constraints.push({
+      type: "time_window",
+      check: (assignment) => {
+        const droneSchedules = {}
+
+        Object.entries(assignment).forEach(([deliveryId, droneId]) => {
+          if (!droneSchedules[droneId]) droneSchedules[droneId] = []
+          droneSchedules[droneId].push(Number.parseInt(deliveryId))
+        })
+
+        return Object.entries(droneSchedules).every(([droneId, deliveryIds]) => {
+          const drone = this.drones.find((d) => d.id === Number.parseInt(droneId))
+          let currentTime = 0
+          let currentPos = drone.start_pos
+
+          return deliveryIds.every((deliveryId) => {
+            const delivery = this.deliveries.find((d) => d.id === deliveryId)
+            const travelTime = this.calculateDistance(currentPos, delivery.pos) / drone.speed
+            currentTime += travelTime
+            currentPos = delivery.pos
+
+            return currentTime >= delivery.time_window[0] && currentTime <= delivery.time_window[1]
+          })
+        })
+      },
+    })
+  }
+
+  calculateDistance(pos1, pos2) {
+    return Math.sqrt(Math.pow(pos1[0] - pos2[0], 2) + Math.pow(pos1[1] - pos2[1], 2))
+  }
+
+  isConsistent(assignment) {
+    return this.constraints.every((constraint) => constraint.check(assignment))
+  }
+
+  backtrackSearch() {
+    const assignment = {}
+
+    const backtrack = (index) => {
+      if (index === this.variables.length) {
+        return this.isConsistent(assignment)
+      }
+
+      const variable = this.variables[index]
+
+      for (const value of this.domains[variable]) {
+        assignment[variable] = value
+
+        if (this.isConsistent(assignment)) {
+          if (backtrack(index + 1)) {
+            return true
+          }
+        }
+
+        delete assignment[variable]
+      }
+
+      return false
+    }
+
+    if (backtrack(0)) {
+      return this.convertToRoutes(assignment)
+    }
+
+    return null
+  }
+
+  convertToRoutes(assignment) {
+    const routes = {}
+    let totalDistance = 0
+    let energyConsumption = 0
+
+    Object.entries(assignment).forEach(([deliveryId, droneId]) => {
+      if (!routes[droneId]) routes[droneId] = []
+      routes[droneId].push(Number.parseInt(deliveryId))
+    })
+
+    // Mesafe ve enerji hesapla
+    Object.entries(routes).forEach(([droneId, deliveryIds]) => {
+      const drone = this.drones.find((d) => d.id === Number.parseInt(droneId))
+      let currentPos = drone.start_pos
+
+      deliveryIds.forEach((deliveryId) => {
+        const delivery = this.deliveries.find((d) => d.id === deliveryId)
+        const distance = this.calculateDistance(currentPos, delivery.pos)
+        totalDistance += distance
+        energyConsumption += distance * delivery.weight * 0.1
+        currentPos = delivery.pos
+      })
+    })
+
+    return {
+      routes,
+      totalDistance,
+      completedDeliveries: Object.keys(assignment).length,
+      energyConsumption,
+    }
+  }
+
+  solve() {
+    return this.backtrackSearch()
+  }
+}
+
+// Genetik Algoritma Implementasyonu
+export class GeneticAlgorithm {
+  constructor(drones, deliveries, noFlyZones, options = {}) {
+    this.drones = drones
+    this.deliveries = deliveries
+    this.noFlyZones = noFlyZones
+
+    this.populationSize = options.populationSize || 50
+    this.generations = options.generations || 100
+    this.mutationRate = options.mutationRate || 0.1
+    this.crossoverRate = options.crossoverRate || 0.8
+    this.elitismRate = options.elitismRate || 0.2
+  }
+
+  calculateDistance(pos1, pos2) {
+    return Math.sqrt(Math.pow(pos1[0] - pos2[0], 2) + Math.pow(pos1[1] - pos2[1], 2))
+  }
+
+  createRandomChromosome() {
+    return this.deliveries.map((delivery) => {
+      const validDrones = this.drones.filter((drone) => drone.max_weight >= delivery.weight)
+      return validDrones.length > 0 ? validDrones[Math.floor(Math.random() * validDrones.length)].id : this.drones[0].id
+    })
+  }
+
+  calculateFitness(chromosome) {
+    const droneRoutes = {}
+    const droneLoads = {}
+    let fitness = 0
+    let violations = 0
+
+    // Rotaları oluştur
+    chromosome.forEach((droneId, index) => {
+      const delivery = this.deliveries[index]
+
+      if (!droneRoutes[droneId]) droneRoutes[droneId] = []
+      droneRoutes[droneId].push(delivery)
+
+      const currentLoad = droneLoads[droneId] || 0
+      const drone = this.drones.find((d) => d.id === droneId)
+
+      // Kapasite ihlali
+      if (currentLoad + delivery.weight > drone.max_weight) {
+        violations += 100
+      } else {
+        droneLoads[droneId] = currentLoad + delivery.weight
+        fitness += delivery.priority * 10 // Öncelik bonusu
+      }
+    })
+
+    // Mesafe ve zaman cezaları
+    Object.entries(droneRoutes).forEach(([droneId, deliveries]) => {
+      const drone = this.drones.find((d) => d.id === Number.parseInt(droneId))
+      let currentPos = drone.start_pos
+      let currentTime = 0
+
+      deliveries.forEach((delivery) => {
+        const distance = this.calculateDistance(currentPos, delivery.pos)
+        const travelTime = distance / drone.speed
+
+        currentTime += travelTime
+        currentPos = delivery.pos
+
+        // Mesafe cezası
+        fitness -= distance * 0.5
+
+        // Zaman penceresi ihlali
+        if (currentTime < delivery.time_window[0] || currentTime > delivery.time_window[1]) {
+          violations += 50
+        }
+
+        // Enerji tüketimi
+        fitness -= distance * delivery.weight * 0.01
+      })
+    })
+
+    return Math.max(0, fitness - violations)
+  }
+
+  selection(population, fitnessScores) {
+    // Tournament selection
+    const tournamentSize = 3
+    const selected = []
+
+    for (let i = 0; i < population.length; i++) {
+      let best = Math.floor(Math.random() * population.length)
+
+      for (let j = 1; j < tournamentSize; j++) {
+        const competitor = Math.floor(Math.random() * population.length)
+        if (fitnessScores[competitor] > fitnessScores[best]) {
+          best = competitor
+        }
+      }
+
+      selected.push([...population[best]])
+    }
+
+    return selected
+  }
+
+  crossover(parent1, parent2) {
+    if (Math.random() > this.crossoverRate) {
+      return [parent1, parent2]
+    }
+
+    const crossoverPoint = Math.floor(Math.random() * parent1.length)
+    const child1 = [...parent1.slice(0, crossoverPoint), ...parent2.slice(crossoverPoint)]
+    const child2 = [...parent2.slice(0, crossoverPoint), ...parent1.slice(crossoverPoint)]
+
+    return [child1, child2]
+  }
+
+  mutate(chromosome) {
+    return chromosome.map((gene, index) => {
+      if (Math.random() < this.mutationRate) {
+        const delivery = this.deliveries[index]
+        const validDrones = this.drones.filter((drone) => drone.max_weight >= delivery.weight)
+        return validDrones.length > 0 ? validDrones[Math.floor(Math.random() * validDrones.length)].id : gene
+      }
+      return gene
+    })
+  }
+
+  evolve() {
+    // İlk popülasyonu oluştur
+    let population = Array.from({ length: this.populationSize }, () => this.createRandomChromosome())
+
+    for (let generation = 0; generation < this.generations; generation++) {
+      // Fitness hesapla
+      const fitnessScores = population.map((chromosome) => this.calculateFitness(chromosome))
+
+      // Elitism - en iyileri koru
+      const sortedIndices = fitnessScores
+        .map((fitness, index) => ({ fitness, index }))
+        .sort((a, b) => b.fitness - a.fitness)
+        .map((item) => item.index)
+
+      const eliteCount = Math.floor(this.populationSize * this.elitismRate)
+      const newPopulation = []
+
+      // En iyileri koru
+      for (let i = 0; i < eliteCount; i++) {
+        newPopulation.push([...population[sortedIndices[i]]])
+      }
+
+      // Seçim, çaprazlama ve mutasyon
+      const selected = this.selection(population, fitnessScores)
+
+      while (newPopulation.length < this.populationSize) {
+        const parent1 = selected[Math.floor(Math.random() * selected.length)]
+        const parent2 = selected[Math.floor(Math.random() * selected.length)]
+
+        const [child1, child2] = this.crossover(parent1, parent2)
+
+        newPopulation.push(this.mutate(child1))
+        if (newPopulation.length < this.populationSize) {
+          newPopulation.push(this.mutate(child2))
+        }
+      }
+
+      population = newPopulation
+    }
+
+    // En iyi çözümü döndür
+    const finalFitnessScores = population.map((chromosome) => this.calculateFitness(chromosome))
+    const bestIndex = finalFitnessScores.indexOf(Math.max(...finalFitnessScores))
+
+    return this.convertToRoutes(population[bestIndex])
+  }
+
+  convertToRoutes(chromosome) {
+    const routes = {}
+    let totalDistance = 0
+    let energyConsumption = 0
+
+    chromosome.forEach((droneId, index) => {
+      const delivery = this.deliveries[index]
+      if (!routes[droneId]) routes[droneId] = []
+      routes[droneId].push(delivery.id)
+    })
+
+    // Mesafe ve enerji hesapla
+    Object.entries(routes).forEach(([droneId, deliveryIds]) => {
+      const drone = this.drones.find((d) => d.id === Number.parseInt(droneId))
+      let currentPos = drone.start_pos
+
+      deliveryIds.forEach((deliveryId) => {
+        const delivery = this.deliveries.find((d) => d.id === deliveryId)
+        const distance = this.calculateDistance(currentPos, delivery.pos)
+        totalDistance += distance
+        energyConsumption += distance * delivery.weight * 0.1
+        currentPos = delivery.pos
+      })
+    })
+
+    return {
+      routes,
+      totalDistance,
+      completedDeliveries: chromosome.length,
+      energyConsumption,
+    }
+  }
+}
+
+
+
+
+---------------------------------------------------------
+
+
+
+
+
+import type { Metadata } from 'next'
+import './globals.css'
+
+export const metadata: Metadata = {
+  title: 'v0 App',
+  description: 'Created with v0',
+  generator: 'v0.dev',
+}
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+    </html>
+  )
+}
+
+
+
+
+-------------------------------------
+export class DataGenerator {
+  constructor() {
+    this.mapSize = { width: 100, height: 100 }
+  }
+
+  generateRandomPosition() {
+    return [Math.floor(Math.random() * this.mapSize.width), Math.floor(Math.random() * this.mapSize.height)]
+  }
+
+  generateDrones(count = 5) {
+    const drones = []
+
+    for (let i = 1; i <= count; i++) {
+      drones.push({
+        id: i,
+        max_weight: Math.round((Math.random() * 4 + 2) * 10) / 10, // 2.0 - 6.0 kg
+        battery: Math.floor(Math.random() * 15000 + 8000), // 8000 - 23000 mAh
+        speed: Math.round((Math.random() * 8 + 5) * 10) / 10, // 5.0 - 13.0 m/s
+        start_pos: this.generateRandomPosition(),
+      })
+    }
+
+    return drones
+  }
+
+  generateDeliveries(count = 20) {
+    const deliveries = []
+
+    for (let i = 1; i <= count; i++) {
+      const timeStart = Math.floor(Math.random() * 60)
+      const timeEnd = timeStart + Math.floor(Math.random() * 60 + 30)
+
+      deliveries.push({
+        id: i,
+        pos: this.generateRandomPosition(),
+        weight: Math.round((Math.random() * 4.5 + 0.5) * 10) / 10, // 0.5 - 5.0 kg
+        priority: Math.floor(Math.random() * 5) + 1, // 1-5
+        time_window: [timeStart, timeEnd],
+      })
+    }
+
+    return deliveries
+  }
+
+  generateNoFlyZones(count = 3) {
+    const zones = []
+
+    for (let i = 1; i <= count; i++) {
+      const centerX = Math.floor(Math.random() * (this.mapSize.width - 40)) + 20
+      const centerY = Math.floor(Math.random() * (this.mapSize.height - 40)) + 20
+      const width = Math.floor(Math.random() * 20) + 10
+      const height = Math.floor(Math.random() * 20) + 10
+
+      const timeStart = Math.floor(Math.random() * 60)
+      const timeEnd = timeStart + Math.floor(Math.random() * 80 + 40)
+
+      zones.push({
+        id: i,
+        coordinates: [
+          [centerX - width / 2, centerY - height / 2],
+          [centerX + width / 2, centerY - height / 2],
+          [centerX + width / 2, centerY + height / 2],
+          [centerX - width / 2, centerY + height / 2],
+        ],
+        active_time: [timeStart, timeEnd],
+      })
+    }
+
+    return zones
+  }
+
+  generateScenario(droneCount = 5, deliveryCount = 20, zoneCount = 3) {
+    return {
+      drones: this.generateDrones(droneCount),
+      deliveries: this.generateDeliveries(deliveryCount),
+      noFlyZones: this.generateNoFlyZones(zoneCount),
+    }
+  }
+
+  generateLargeScenario() {
+    return this.generateScenario(10, 50, 5)
+  }
+
+  generateTestScenarios() {
+    return {
+      small: this.generateScenario(3, 10, 2),
+      medium: this.generateScenario(5, 20, 3),
+      large: this.generateScenario(10, 50, 5),
+      xlarge: this.generateScenario(15, 100, 8),
+    }
+  }
+
+  exportToJSON(scenario, filename = "drone_scenario.json") {
+    const dataStr = JSON.stringify(scenario, null, 2)
+    const dataBlob = new Blob([dataStr], { type: "application/json" })
+    const url = URL.createObjectURL(dataBlob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = filename
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  exportToText(scenario, filename = "drone_scenario.txt") {
+    let content = "# Drone Delivery Scenario\n\n"
+
+    content += "## Drones\n"
+    scenario.drones.forEach((drone) => {
+      content += `Drone ${drone.id}: Weight=${drone.max_weight}kg, Battery=${drone.battery}mAh, Speed=${drone.speed}m/s, Start=(${drone.start_pos[0]},${drone.start_pos[1]})\n`
+    })
+
+    content += "\n## Deliveries\n"
+    scenario.deliveries.forEach((delivery) => {
+      content += `Delivery ${delivery.id}: Pos=(${delivery.pos[0]},${delivery.pos[1]}), Weight=${delivery.weight}kg, Priority=${delivery.priority}, Time=[${delivery.time_window[0]}-${delivery.time_window[1]}]\n`
+    })
+
+    content += "\n## No-Fly Zones\n"
+    scenario.noFlyZones.forEach((zone) => {
+      content += `Zone ${zone.id}: Active=[${zone.active_time[0]}-${zone.active_time[1]}], Coordinates=${JSON.stringify(zone.coordinates)}\n`
+    })
+
+    const dataBlob = new Blob([content], { type: "text/plain" })
+    const url = URL.createObjectURL(dataBlob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = filename
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+}
+
+// Performans Analizi Sınıfı
+export class PerformanceAnalyzer {
+  constructor() {
+    this.results = []
+  }
+
+  addResult(algorithmName, result, executionTime) {
+    this.results.push({
+      algorithm: algorithmName,
+      ...result,
+      executionTime: executionTime,
+      timestamp: new Date().toISOString(),
+    })
+  }
+
+  compareAlgorithms() {
+    if (this.results.length === 0) return null
+
+    const comparison = {
+      best_completion_rate: null,
+      best_distance: null,
+      best_energy: null,
+      best_time: null,
+      summary: {},
+    }
+
+    this.results.forEach((result) => {
+      const completionRate = result.completedDeliveries / 20 // Assuming 20 deliveries
+
+      if (!comparison.best_completion_rate || completionRate > comparison.best_completion_rate.rate) {
+        comparison.best_completion_rate = {
+          algorithm: result.algorithm,
+          rate: completionRate,
+        }
+      }
+
+      if (!comparison.best_distance || result.totalDistance < comparison.best_distance.distance) {
+        comparison.best_distance = {
+          algorithm: result.algorithm,
+          distance: result.totalDistance,
+        }
+      }
+
+      if (!comparison.best_energy || result.energyConsumption < comparison.best_energy.energy) {
+        comparison.best_energy = {
+          algorithm: result.algorithm,
+          energy: result.energyConsumption,
+        }
+      }
+
+      if (!comparison.best_time || result.executionTime < comparison.best_time.time) {
+        comparison.best_time = {
+          algorithm: result.algorithm,
+          time: result.executionTime,
+        }
+      }
+
+      comparison.summary[result.algorithm] = {
+        completionRate: completionRate,
+        totalDistance: result.totalDistance,
+        energyConsumption: result.energyConsumption,
+        executionTime: result.executionTime,
+      }
+    })
+
+    return comparison
+  }
+
+  generateReport() {
+    const comparison = this.compareAlgorithms()
+    if (!comparison) return "No results to analyze."
+
+    let report = "# Drone Delivery Algorithm Performance Report\n\n"
+
+    report += "## Executive Summary\n"
+    report += `- Best Completion Rate: ${comparison.best_completion_rate.algorithm} (${(comparison.best_completion_rate.rate * 100).toFixed(1)}%)\n`
+    report += `- Best Distance: ${comparison.best_distance.algorithm} (${comparison.best_distance.distance.toFixed(2)} units)\n`
+    report += `- Best Energy Efficiency: ${comparison.best_energy.algorithm} (${comparison.best_energy.energy.toFixed(2)} units)\n`
+    report += `- Fastest Execution: ${comparison.best_time.algorithm} (${comparison.best_time.time.toFixed(2)} ms)\n\n`
+
+    report += "## Detailed Results\n\n"
+
+    Object.entries(comparison.summary).forEach(([algorithm, metrics]) => {
+      report += `### ${algorithm}\n`
+      report += `- Completion Rate: ${(metrics.completionRate * 100).toFixed(1)}%\n`
+      report += `- Total Distance: ${metrics.totalDistance.toFixed(2)} units\n`
+      report += `- Energy Consumption: ${metrics.energyConsumption.toFixed(2)} units\n`
+      report += `- Execution Time: ${metrics.executionTime.toFixed(2)} ms\n\n`
+    })
+
+    report += "## Algorithm Analysis\n\n"
+    report += "### A* Algorithm\n"
+    report += "- **Strengths**: Fast execution, good for real-time applications\n"
+    report += "- **Weaknesses**: May not find global optimum, greedy approach\n"
+    report += "- **Best Use Case**: Time-critical scenarios with moderate complexity\n\n"
+
+    report += "### CSP Algorithm\n"
+    report += "- **Strengths**: Guarantees constraint satisfaction, systematic approach\n"
+    report += "- **Weaknesses**: Can be slow for large problems, may not find solution\n"
+    report += "- **Best Use Case**: Problems with strict constraints and smaller datasets\n\n"
+
+    report += "### Genetic Algorithm\n"
+    report += "- **Strengths**: Can find global optimum, handles complex search spaces\n"
+    report += "- **Weaknesses**: Slower execution, requires parameter tuning\n"
+    report += "- **Best Use Case**: Complex optimization problems where quality matters more than speed\n\n"
+
+    return report
+  }
+
+  exportReport(filename = "performance_report.txt") {
+    const report = this.generateReport()
+    const dataBlob = new Blob([report], { type: "text/plain" })
+    const url = URL.createObjectURL(dataBlob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = filename
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+}
+
+--------------------------------------------------------------
+
+
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
+
+
+----------------------------------------------------
+
+
+
+
+"use client"
+
+import { useState, useEffect } from "react"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import { Progress } from "@/components/ui/progress"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Radar,
+} from "recharts"
+import { TrendingUp, Clock, Zap, Target, Download, RefreshCw } from "lucide-react"
+
+interface PerformanceMetrics {
+  algorithm: string
+  completionRate: number
+  totalDistance: number
+  energyConsumption: number
+  executionTime: number
+  timestamp: string
+}
+
+interface PerformanceDashboardProps {
+  results: any[]
+  onRunBenchmark: () => void
+  isRunning: boolean
+}
+
+export function PerformanceDashboard({ results, onRunBenchmark, isRunning }: PerformanceDashboardProps) {
+  const [metrics, setMetrics] = useState<PerformanceMetrics[]>([])
+  const [selectedMetric, setSelectedMetric] = useState<string>("completionRate")
+
+  useEffect(() => {
+    if (results.length > 0) {
+      const processedMetrics = results.map((result) => ({
+        algorithm: result.algorithm,
+        completionRate: (result.completed_deliveries / 20) * 100, // Assuming 20 total deliveries
+        totalDistance: result.total_distance,
+        energyConsumption: result.energy_consumption,
+        executionTime: result.execution_time,
+        timestamp: new Date().toISOString(),
+      }))
+      setMetrics(processedMetrics)
+    }
+  }, [results])
+
+  const getChartData = () => {
+    return metrics.map((metric) => ({
+      name: metric.algorithm.split(" ")[0], // Kısa isim
+      "Tamamlanma Oranı (%)": metric.completionRate,
+      "Toplam Mesafe": metric.totalDistance,
+      "Enerji Tüketimi": metric.energyConsumption,
+      "Çalışma Süresi (ms)": metric.executionTime,
+    }))
+  }
+
+  const getRadarData = () => {
+    if (metrics.length === 0) return []
+
+    const maxValues = {
+      completionRate: Math.max(...metrics.map((m) => m.completionRate)),
+      totalDistance: Math.max(...metrics.map((m) => m.totalDistance)),
+      energyConsumption: Math.max(...metrics.map((m) => m.energyConsumption)),
+      executionTime: Math.max(...metrics.map((m) => m.executionTime)),
+    }
+
+    return metrics.map((metric) => ({
+      algorithm: metric.algorithm.split(" ")[0],
+      Tamamlanma: (metric.completionRate / maxValues.completionRate) * 100,
+      Mesafe: 100 - (metric.totalDistance / maxValues.totalDistance) * 100, // Ters çevir (düşük daha iyi)
+      Enerji: 100 - (metric.energyConsumption / maxValues.energyConsumption) * 100, // Ters çevir
+      Hız: 100 - (metric.executionTime / maxValues.executionTime) * 100, // Ters çevir
+    }))
+  }
+
+  const getBestPerformer = (metric: keyof PerformanceMetrics) => {
+    if (metrics.length === 0) return null
+
+    if (metric === "completionRate") {
+      return metrics.reduce((best, current) => (current.completionRate > best.completionRate ? current : best))
+    } else {
+      return metrics.reduce((best, current) => (current[metric] < best[metric] ? current : best))
+    }
+  }
+
+  const exportResults = () => {
+    const dataStr = JSON.stringify(metrics, null, 2)
+    const dataBlob = new Blob([dataStr], { type: "application/json" })
+    const url = URL.createObjectURL(dataBlob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = "performance_metrics.json"
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  return (
+    <div className="space-y-6">
+      {/* Control Panel */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center justify-between">
+            <span className="flex items-center gap-2">
+              <TrendingUp className="h-5 w-5" />
+              Performans Analizi
+            </span>
+            <div className="flex gap-2">
+              <Button onClick={onRunBenchmark} disabled={isRunning} size="sm">
+                <RefreshCw className={`h-4 w-4 mr-2 ${isRunning ? "animate-spin" : ""}`} />
+                Benchmark Çalıştır
+              </Button>
+              {metrics.length > 0 && (
+                <Button onClick={exportResults} variant="outline" size="sm">
+                  <Download className="h-4 w-4 mr-2" />
+                  Dışa Aktar
+                </Button>
+              )}
+            </div>
+          </CardTitle>
+        </CardHeader>
+        {isRunning && (
+          <CardContent>
+            <div className="space-y-2">
+              <p className="text-sm text-gray-600">Performans testi çalışıyor...</p>
+              <Progress value={33} className="w-full" />
+            </div>
+          </CardContent>
+        )}
+      </Card>
+
+      {metrics.length > 0 && (
+        <>
+          {/* Key Metrics */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <Target className="h-4 w-4" />
+                  En İyi Tamamlanma
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-1">
+                  <p className="text-2xl font-bold">{getBestPerformer("completionRate")?.completionRate.toFixed(1)}%</p>
+                  <p className="text-xs text-gray-600">{getBestPerformer("completionRate")?.algorithm}</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <TrendingUp className="h-4 w-4" />
+                  En Kısa Mesafe
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-1">
+                  <p className="text-2xl font-bold">{getBestPerformer("totalDistance")?.totalDistance.toFixed(1)}</p>
+                  <p className="text-xs text-gray-600">{getBestPerformer("totalDistance")?.algorithm}</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <Zap className="h-4 w-4" />
+                  En Az Enerji
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-1">
+                  <p className="text-2xl font-bold">
+                    {getBestPerformer("energyConsumption")?.energyConsumption.toFixed(1)}
+                  </p>
+                  <p className="text-xs text-gray-600">{getBestPerformer("energyConsumption")?.algorithm}</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-sm font-medium flex items-center gap-2">
+                  <Clock className="h-4 w-4" />
+                  En Hızlı
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-1">
+                  <p className="text-2xl font-bold">{getBestPerformer("executionTime")?.executionTime.toFixed(1)}ms</p>
+                  <p className="text-xs text-gray-600">{getBestPerformer("executionTime")?.algorithm}</p>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Charts */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Detaylı Performans Analizi</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <Tabs defaultValue="bar" className="w-full">
+                <TabsList className="grid w-full grid-cols-3">
+                  <TabsTrigger value="bar">Çubuk Grafik</TabsTrigger>
+                  <TabsTrigger value="radar">Radar Grafik</TabsTrigger>
+                  <TabsTrigger value="table">Tablo</TabsTrigger>
+                </TabsList>
+
+                <TabsContent value="bar" className="space-y-4">
+                  <div className="h-80">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <BarChart data={getChartData()}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="name" />
+                        <YAxis />
+                        <Tooltip />
+                        <Legend />
+                        <Bar dataKey="Tamamlanma Oranı (%)" fill="#8884d8" />
+                        <Bar dataKey="Toplam Mesafe" fill="#82ca9d" />
+                        <Bar dataKey="Enerji Tüketimi" fill="#ffc658" />
+                        <Bar dataKey="Çalışma Süresi (ms)" fill="#ff7300" />
+                      </BarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </TabsContent>
+
+                <TabsContent value="radar" className="space-y-4">
+                  <div className="h-80">
+                    <ResponsiveContainer width="100%" height="100%">
+                      <RadarChart data={getRadarData()}>
+                        <PolarGrid />
+                        <PolarAngleAxis dataKey="algorithm" />
+                        <PolarRadiusAxis angle={90} domain={[0, 100]} />
+                        <Radar
+                          name="Tamamlanma"
+                          dataKey="Tamamlanma"
+                          stroke="#8884d8"
+                          fill="#8884d8"
+                          fillOpacity={0.6}
+                        />
+                        <Radar name="Mesafe" dataKey="Mesafe" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
+                        <Radar name="Enerji" dataKey="Enerji" stroke="#ffc658" fill="#ffc658" fillOpacity={0.6} />
+                        <Radar name="Hız" dataKey="Hız" stroke="#ff7300" fill="#ff7300" fillOpacity={0.6} />
+                        <Legend />
+                      </RadarChart>
+                    </ResponsiveContainer>
+                  </div>
+                </TabsContent>
+
+                <TabsContent value="table" className="space-y-4">
+                  <div className="overflow-x-auto">
+                    <table className="w-full border-collapse border border-gray-300">
+                      <thead>
+                        <tr className="bg-gray-50">
+                          <th className="border border-gray-300 px-4 py-2 text-left">Algoritma</th>
+                          <th className="border border-gray-300 px-4 py-2 text-left">Tamamlanma (%)</th>
+                          <th className="border border-gray-300 px-4 py-2 text-left">Mesafe</th>
+                          <th className="border border-gray-300 px-4 py-2 text-left">Enerji</th>
+                          <th className="border border-gray-300 px-4 py-2 text-left">Süre (ms)</th>
+                          <th className="border border-gray-300 px-4 py-2 text-left">Genel Skor</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {metrics.map((metric, index) => {
+                          const generalScore =
+                            metric.completionRate * 0.4 +
+                            (100 - (metric.totalDistance / Math.max(...metrics.map((m) => m.totalDistance))) * 100) *
+                              0.3 +
+                            (100 -
+                              (metric.energyConsumption / Math.max(...metrics.map((m) => m.energyConsumption))) * 100) *
+                              0.2 +
+                            (100 - (metric.executionTime / Math.max(...metrics.map((m) => m.executionTime))) * 100) *
+                              0.1
+
+                          return (
+                            <tr key={index} className="hover:bg-gray-50">
+                              <td className="border border-gray-300 px-4 py-2 font-medium">{metric.algorithm}</td>
+                              <td className="border border-gray-300 px-4 py-2">
+                                <Badge variant={metric.completionRate > 80 ? "default" : "secondary"}>
+                                  {metric.completionRate.toFixed(1)}%
+                                </Badge>
+                              </td>
+                              <td className="border border-gray-300 px-4 py-2">{metric.totalDistance.toFixed(2)}</td>
+                              <td className="border border-gray-300 px-4 py-2">
+                                {metric.energyConsumption.toFixed(2)}
+                              </td>
+                              <td className="border border-gray-300 px-4 py-2">{metric.executionTime.toFixed(2)}</td>
+                              <td className="border border-gray-300 px-4 py-2">
+                                <Badge
+                                  variant={generalScore > 70 ? "default" : generalScore > 50 ? "secondary" : "outline"}
+                                >
+                                  {generalScore.toFixed(1)}
+                                </Badge>
+                              </td>
+                            </tr>
+                          )
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                </TabsContent>
+              </Tabs>
+            </CardContent>
+          </Card>
+
+          {/* Algorithm Recommendations */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Algoritma Önerileri</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="space-y-2">
+                  <h4 className="font-medium text-green-700">Gerçek Zamanlı Uygulamalar</h4>
+                  <p className="text-sm text-gray-600">
+                    Hızlı karar verme gereken durumlar için A* algoritması önerilir.
+                  </p>
+                  <Badge variant="outline">A* Algorithm</Badge>
+                </div>
+
+                <div className="space-y-2">
+                  <h4 className="font-medium text-blue-700">Kısıt Yoğun Problemler</h4>
+                  <p className="text-sm text-gray-600">
+                    Katı kısıtları olan küçük-orta ölçekli problemler için CSP önerilir.
+                  </p>
+                  <Badge variant="outline">CSP Algorithm</Badge>
+                </div>
+
+                <div className="space-y-2">
+                  <h4 className="font-medium text-purple-700">Kalite Odaklı Optimizasyon</h4>
+                  <p className="text-sm text-gray-600">
+                    En iyi çözümü bulmak için zaman ayırabildiğiniz durumlarda Genetik Algoritma önerilir.
+                  </p>
+                  <Badge variant="outline">Genetic Algorithm</Badge>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </>
+      )}
+    </div>
+  )
+}
+
+
+
+---------------------------------------------------------------------------
+
+
+
+
+
+"use client"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Progress } from "@/components/ui/progress"
+import { AlertTriangle, Shield, Clock, Weight, Zap } from "lucide-react"
+
+interface ConstraintAnalysisProps {
+  drones: any[]
+  deliveries: any[]
+  noFlyZones: any[]
+  routes: { [key: number]: number[] }
+}
+
+export function ConstraintAnalysis({ drones, deliveries, noFlyZones, routes }: ConstraintAnalysisProps) {
+  // Yasak bölge analizi
+  const analyzeNoFlyZoneImpact = () => {
+    let affectedDeliveries = 0
+    let totalNoFlyArea = 0
+
+    deliveries.forEach((delivery) => {
+      const isAffected = noFlyZones.some((zone) => {
+        // Teslimat noktasının yasak bölgeye yakınlığını kontrol et
+        const distance = calculateDistanceToZone(delivery.pos, zone.coordinates)
+        return distance < 10 // 10 birim yakınlık eşiği
+      })
+      if (isAffected) affectedDeliveries++
+    })
+
+    noFlyZones.forEach((zone) => {
+      totalNoFlyArea += calculateZoneArea(zone.coordinates)
+    })
+
+    return {
+      affectedDeliveries,
+      affectedPercentage: (affectedDeliveries / deliveries.length) * 100,
+      totalNoFlyArea,
+      mapCoverage: (totalNoFlyArea / 10000) * 100, // 100x100 harita için
+    }
+  }
+
+  // Kapasite analizi
+  const analyzeCapacityConstraints = () => {
+    const droneUtilization = drones.map((drone) => {
+      const assignedDeliveries = Object.entries(routes)
+        .filter(([droneId]) => Number.parseInt(droneId) === drone.id)
+        .flatMap(([, deliveryIds]) => deliveryIds)
+        .map((id) => deliveries.find((d) => d.id === id))
+        .filter(Boolean)
+
+      const totalWeight = assignedDeliveries.reduce((sum, delivery) => sum + delivery.weight, 0)
+      const utilization = (totalWeight / drone.max_weight) * 100
+
+      return {
+        droneId: drone.id,
+        maxWeight: drone.max_weight,
+        usedWeight: totalWeight,
+        utilization,
+        deliveryCount: assignedDeliveries.length,
+        isOverloaded: totalWeight > drone.max_weight,
+      }
+    })
+
+    const overloadedDrones = droneUtilization.filter((d) => d.isOverloaded).length
+    const avgUtilization = droneUtilization.reduce((sum, d) => sum + d.utilization, 0) / drones.length
+
+    return {
+      droneUtilization,
+      overloadedDrones,
+      avgUtilization,
+      efficiencyScore: avgUtilization > 80 ? "Yüksek" : avgUtilization > 60 ? "Orta" : "Düşük",
+    }
+  }
+
+  // Zaman penceresi analizi
+  const analyzeTimeConstraints = () => {
+    const timeViolations = []
+    const urgentDeliveries = deliveries.filter((d) => d.priority >= 4)
+    const timeWindowAnalysis = deliveries.map((delivery) => {
+      const windowSize = delivery.time_window[1] - delivery.time_window[0]
+      const urgency = delivery.priority >= 4 ? "Yüksek" : delivery.priority >= 3 ? "Orta" : "Düşük"
+
+      return {
+        deliveryId: delivery.id,
+        windowSize,
+        urgency,
+        isUrgent: delivery.priority >= 4,
+        isTight: windowSize < 30,
+      }
+    })
+
+    const tightWindows = timeWindowAnalysis.filter((t) => t.isTight).length
+    const urgentCount = urgentDeliveries.length
+
+    return {
+      timeWindowAnalysis,
+      tightWindows,
+      urgentCount,
+      urgentPercentage: (urgentCount / deliveries.length) * 100,
+      avgWindowSize: timeWindowAnalysis.reduce((sum, t) => sum + t.windowSize, 0) / deliveries.length,
+    }
+  }
+
+  // Enerji analizi
+  const analyzeEnergyConstraints = () => {
+    const energyAnalysis = drones.map((drone) => {
+      const assignedRoute = routes[drone.id] || []
+      let totalDistance = 0
+      let currentPos = drone.start_pos
+
+      assignedRoute.forEach((deliveryId) => {
+        const delivery = deliveries.find((d) => d.id === deliveryId)
+        if (delivery) {
+          const distance = calculateDistance(currentPos, delivery.pos)
+          totalDistance += distance
+          currentPos = delivery.pos
+        }
+      })
+
+      const energyConsumption = totalDistance * 0.1 // Basit enerji modeli
+      const batteryUsage = (energyConsumption / drone.battery) * 100
+
+      return {
+        droneId: drone.id,
+        battery: drone.battery,
+        energyUsed: energyConsumption,
+        batteryUsage,
+        totalDistance,
+        isLowBattery: batteryUsage > 80,
+      }
+    })
+
+    const lowBatteryDrones = energyAnalysis.filter((e) => e.isLowBattery).length
+    const avgBatteryUsage = energyAnalysis.reduce((sum, e) => sum + e.batteryUsage, 0) / drones.length
+
+    return {
+      energyAnalysis,
+      lowBatteryDrones,
+      avgBatteryUsage,
+      energyEfficiency: avgBatteryUsage < 60 ? "İyi" : avgBatteryUsage < 80 ? "Orta" : "Kötü",
+    }
+  }
+
+  const calculateDistance = (pos1: [number, number], pos2: [number, number]): number => {
+    return Math.sqrt(Math.pow(pos1[0] - pos2[0], 2) + Math.pow(pos1[1] - pos2[1], 2))
+  }
+
+  const calculateDistanceToZone = (point: [number, number], zoneCoords: [number, number][]): number => {
+    // En yakın kenar mesafesini hesapla
+    let minDistance = Number.POSITIVE_INFINITY
+    for (let i = 0; i < zoneCoords.length; i++) {
+      const distance = calculateDistance(point, zoneCoords[i])
+      minDistance = Math.min(minDistance, distance)
+    }
+    return minDistance
+  }
+
+  const calculateZoneArea = (coords: [number, number][]): number => {
+    // Basit dikdörtgen alan hesabı
+    if (coords.length < 4) return 0
+    const width = Math.abs(coords[1][0] - coords[0][0])
+    const height = Math.abs(coords[2][1] - coords[1][1])
+    return width * height
+  }
+
+  const noFlyAnalysis = analyzeNoFlyZoneImpact()
+  const capacityAnalysis = analyzeCapacityConstraints()
+  const timeAnalysis = analyzeTimeConstraints()
+  const energyAnalysis = analyzeEnergyConstraints()
+
+  return (
+    <div className="space-y-6">
+      {/* Genel Kısıt Özeti */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <AlertTriangle className="h-5 w-5" />
+            Kısıt Analizi Özeti
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="text-center p-3 bg-red-50 rounded-lg">
+              <Shield className="h-6 w-6 mx-auto mb-1 text-red-600" />
+              <div className="text-lg font-bold text-red-600">{noFlyAnalysis.affectedPercentage.toFixed(1)}%</div>
+              <div className="text-xs text-gray-600">Etkilenen Teslimat</div>
+            </div>
+            <div className="text-center p-3 bg-blue-50 rounded-lg">
+              <Weight className="h-6 w-6 mx-auto mb-1 text-blue-600" />
+              <div className="text-lg font-bold text-blue-600">{capacityAnalysis.avgUtilization.toFixed(1)}%</div>
+              <div className="text-xs text-gray-600">Ortalama Kapasite</div>
+            </div>
+            <div className="text-center p-3 bg-yellow-50 rounded-lg">
+              <Clock className="h-6 w-6 mx-auto mb-1 text-yellow-600" />
+              <div className="text-lg font-bold text-yellow-600">{timeAnalysis.urgentPercentage.toFixed(1)}%</div>
+              <div className="text-xs text-gray-600">Acil Teslimat</div>
+            </div>
+            <div className="text-center p-3 bg-green-50 rounded-lg">
+              <Zap className="h-6 w-6 mx-auto mb-1 text-green-600" />
+              <div className="text-lg font-bold text-green-600">{energyAnalysis.avgBatteryUsage.toFixed(1)}%</div>
+              <div className="text-xs text-gray-600">Ortalama Batarya</div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Yasak Bölge Detay Analizi */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Shield className="h-5 w-5" />
+            Yasak Bölge Etkisi
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-3">
+              <div className="flex justify-between">
+                <span>Etkilenen Teslimat Sayısı:</span>
+                <Badge variant="destructive">
+                  {noFlyAnalysis.affectedDeliveries}/{deliveries.length}
+                </Badge>
+              </div>
+              <div className="flex justify-between">
+                <span>Harita Kapsamı:</span>
+                <span>{noFlyAnalysis.mapCoverage.toFixed(1)}%</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Toplam Yasak Alan:</span>
+                <span>{noFlyAnalysis.totalNoFlyArea.toFixed(0)} birim²</span>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <h5 className="font-medium">Bölge Detayları:</h5>
+              {noFlyZones.map((zone) => (
+                <div key={zone.id} className="flex justify-between items-center p-2 bg-gray-50 rounded">
+                  <span>Bölge {zone.id}</span>
+                  <div className="flex gap-2">
+                    <Badge variant="outline">
+                      {zone.active_time[0]}-{zone.active_time[1]}
+                    </Badge>
+                    <Badge variant={zone.active_time[1] - zone.active_time[0] > 60 ? "destructive" : "secondary"}>
+                      {zone.active_time[1] - zone.active_time[0] > 60 ? "Uzun Süreli" : "Kısa Süreli"}
+                    </Badge>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Kapasite Analizi */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Weight className="h-5 w-5" />
+            Drone Kapasite Analizi
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-3">
+              <div className="flex justify-between">
+                <span>Aşırı Yüklenmiş Drone:</span>
+                <Badge variant={capacityAnalysis.overloadedDrones > 0 ? "destructive" : "secondary"}>
+                  {capacityAnalysis.overloadedDrones}
+                </Badge>
+              </div>
+              <div className="flex justify-between">
+                <span>Ortalama Kullanım:</span>
+                <span>{capacityAnalysis.avgUtilization.toFixed(1)}%</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Verimlilik Skoru:</span>
+                <Badge variant={capacityAnalysis.efficiencyScore === "Yüksek" ? "default" : "secondary"}>
+                  {capacityAnalysis.efficiencyScore}
+                </Badge>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <h5 className="font-medium">Drone Kullanım Detayları:</h5>
+              <div className="max-h-32 overflow-y-auto space-y-1">
+                {capacityAnalysis.droneUtilization.map((drone) => (
+                  <div key={drone.droneId} className="flex justify-between items-center p-2 bg-gray-50 rounded text-sm">
+                    <span>Drone {drone.droneId}</span>
+                    <div className="flex items-center gap-2">
+                      <Progress value={drone.utilization} className="w-16 h-2" />
+                      <span className={drone.isOverloaded ? "text-red-600 font-bold" : ""}>
+                        {drone.utilization.toFixed(0)}%
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Zaman Kısıtları */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Clock className="h-5 w-5" />
+            Zaman Penceresi Analizi
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-3">
+              <div className="flex justify-between">
+                <span>Acil Teslimatlar:</span>
+                <Badge variant="destructive">{timeAnalysis.urgentCount}</Badge>
+              </div>
+              <div className="flex justify-between">
+                <span>Dar Zaman Penceresi:</span>
+                <Badge variant="outline">{timeAnalysis.tightWindows}</Badge>
+              </div>
+              <div className="flex justify-between">
+                <span>Ortalama Pencere Süresi:</span>
+                <span>{timeAnalysis.avgWindowSize.toFixed(0)} dakika</span>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <h5 className="font-medium">Öncelik Dağılımı:</h5>
+              {[5, 4, 3, 2, 1].map((priority) => {
+                const count = deliveries.filter((d) => d.priority === priority).length
+                const percentage = (count / deliveries.length) * 100
+                return (
+                  <div key={priority} className="flex justify-between items-center">
+                    <span>Öncelik {priority}</span>
+                    <div className="flex items-center gap-2">
+                      <Progress value={percentage} className="w-16 h-2" />
+                      <span className="text-sm">{count}</span>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Enerji Analizi */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2">
+            <Zap className="h-5 w-5" />
+            Enerji ve Batarya Analizi
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-3">
+              <div className="flex justify-between">
+                <span>Düşük Batarya Drone:</span>
+                <Badge variant={energyAnalysis.lowBatteryDrones > 0 ? "destructive" : "secondary"}>
+                  {energyAnalysis.lowBatteryDrones}
+                </Badge>
+              </div>
+              <div className="flex justify-between">
+                <span>Ortalama Batarya Kullanımı:</span>
+                <span>{energyAnalysis.avgBatteryUsage.toFixed(1)}%</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Enerji Verimliliği:</span>
+                <Badge variant={energyAnalysis.energyEfficiency === "İyi" ? "default" : "secondary"}>
+                  {energyAnalysis.energyEfficiency}
+                </Badge>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <h5 className="font-medium">Drone Enerji Durumu:</h5>
+              <div className="max-h-32 overflow-y-auto space-y-1">
+                {energyAnalysis.energyAnalysis.map((drone) => (
+                  <div key={drone.droneId} className="flex justify-between items-center p-2 bg-gray-50 rounded text-sm">
+                    <span>Drone {drone.droneId}</span>
+                    <div className="flex items-center gap-2">
+                      <Progress value={drone.batteryUsage} className="w-16 h-2" />
+                      <span className={drone.isLowBattery ? "text-red-600 font-bold" : ""}>
+                        {drone.batteryUsage.toFixed(0)}%
+                      </span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+    </div>
+  )
+}
+
+
+'use client'
+
+import * as React from 'react'
+import {
+  ThemeProvider as NextThemesProvider,
+  type ThemeProviderProps,
+} from 'next-themes'
+
+export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
+  return <NextThemesProvider {...props}>{children}</NextThemesProvider>
+}
+
+
+
+"use client"
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Download, FileText, BarChart3 } from "lucide-react"
+
+interface ReportGeneratorProps {
+  results: any[]
+  drones: any[]
+  deliveries: any[]
+  noFlyZones: any[]
+  currentScenario: string
+}
+
+export function ReportGenerator({ results, drones, deliveries, noFlyZones, currentScenario }: ReportGeneratorProps) {
+  const generateDetailedReport = (): string => {
+    const timestamp = new Date().toLocaleString("tr-TR")
+    const scenarioName = currentScenario === "scenario1" ? "Senaryo 1 - Temel Test" : "Senaryo 2 - Gelişmiş Test"
+
+    let report = `
+DRONE TESLİMAT ROTA OPTİMİZASYONU RAPORU
+=============================================
+
+Rapor Tarihi: ${timestamp}
+Test Senaryosu: ${scenarioName}
+Sistem Versiyonu: v1.0
+
+SENARYO BİLGİLERİ
+================
+• Toplam Drone Sayısı: ${drones.length}
+• Toplam Teslimat Noktası: ${deliveries.length}
+• Yasak Bölge Sayısı: ${noFlyZones.length}
+
+DRONE FİLOSU DETAYLARI
+=====================
+`
+
+    drones.forEach((drone) => {
+      report += `
+Drone ${drone.id}:
+  - Maksimum Ağırlık: ${drone.max_weight} kg
+  - Batarya Kapasitesi: ${drone.battery} mAh
+  - Hız: ${drone.speed} m/s
+  - Başlangıç Pozisyonu: (${drone.start_pos[0]}, ${drone.start_pos[1]})
+`
+    })
+
+    report += `
+TESLİMAT NOKTALARI ANALİZİ
+=========================
+`
+
+    // Öncelik dağılımı
+    const priorityDistribution = [1, 2, 3, 4, 5].map((priority) => ({
+      priority,
+      count: deliveries.filter((d) => d.priority === priority).length,
+    }))
+
+    priorityDistribution.forEach(({ priority, count }) => {
+      const percentage = ((count / deliveries.length) * 100).toFixed(1)
+      report += `Öncelik ${priority}: ${count} teslimat (${percentage}%)\n`
+    })
+
+    // Ağırlık analizi
+    const totalWeight = deliveries.reduce((sum, d) => sum + d.weight, 0)
+    const avgWeight = totalWeight / deliveries.length
+    const maxWeight = Math.max(...deliveries.map((d) => d.weight))
+    const minWeight = Math.min(...deliveries.map((d) => d.weight))
+
+    report += `
+Ağırlık İstatistikleri:
+  - Toplam Ağırlık: ${totalWeight.toFixed(2)} kg
+  - Ortalama Ağırlık: ${avgWeight.toFixed(2)} kg
+  - Maksimum Ağırlık: ${maxWeight} kg
+  - Minimum Ağırlık: ${minWeight} kg
+
+YASAK BÖLGELER
+==============
+`
+
+    noFlyZones.forEach((zone) => {
+      const duration = zone.active_time[1] - zone.active_time[0]
+      report += `
+Yasak Bölge ${zone.id}:
+  - Aktif Süre: ${zone.active_time[0]} - ${zone.active_time[1]} dakika (${duration} dk)
+  - Koordinatlar: ${zone.coordinates.map((coord) => `(${coord[0]},${coord[1]})`).join(", ")}
+  - Durum: ${duration > 60 ? "Uzun Süreli" : "Kısa Süreli"}
+`
+    })
+
+    if (results.length > 0) {
+      report += `
+ALGORİTMA SONUÇLARI
+==================
+`
+
+      results.forEach((result) => {
+        const completionRate = ((result.completed_deliveries / deliveries.length) * 100).toFixed(1)
+
+        report += `
+${result.algorithm}:
+  - Tamamlanan Teslimat: ${result.completed_deliveries}/${deliveries.length} (${completionRate}%)
+  - Toplam Mesafe: ${result.total_distance.toFixed(2)} birim
+  - Enerji Tüketimi: ${result.energy_consumption.toFixed(2)} birim
+  - Çalışma Süresi: ${result.execution_time.toFixed(2)} ms
+  - Aktif Drone Sayısı: ${Object.keys(result.routes).length}
+
+  Drone Rotaları:
+`
+
+        Object.entries(result.routes).forEach(([droneId, deliveryIds]) => {
+          const drone = drones.find((d) => d.id === Number.parseInt(droneId))
+          const routeWeight = deliveryIds.reduce((sum, id) => {
+            const delivery = deliveries.find((d) => d.id === id)
+            return sum + (delivery ? delivery.weight : 0)
+          }, 0)
+
+          report += `    Drone ${droneId}: ${deliveryIds.length} teslimat, ${routeWeight.toFixed(1)} kg\n`
+          report += `      Rota: ${deliveryIds.map((id) => `T${id}`).join(" → ")}\n`
+        })
+
+        report += "\n"
+      })
+
+      // Karşılaştırmalı analiz
+      if (results.length > 1) {
+        report += `
+KARŞILAŞTIRMALI ANALİZ
+=====================
+
+En İyi Performans Metrikleri:
+`
+
+        const bestCompletion = results.reduce((best, current) =>
+          current.completed_deliveries > best.completed_deliveries ? current : best,
+        )
+
+        const bestDistance = results.reduce((best, current) =>
+          current.total_distance < best.total_distance ? current : best,
+        )
+
+        const bestEnergy = results.reduce((best, current) =>
+          current.energy_consumption < best.energy_consumption ? current : best,
+        )
+
+        const bestTime = results.reduce((best, current) =>
+          current.execution_time < best.execution_time ? current : best,
+        )
+
+        report += `• En Yüksek Tamamlanma Oranı: ${bestCompletion.algorithm} (${((bestCompletion.completed_deliveries / deliveries.length) * 100).toFixed(1)}%)\n`
+        report += `• En Kısa Toplam Mesafe: ${bestDistance.algorithm} (${bestDistance.total_distance.toFixed(2)} birim)\n`
+        report += `• En Az Enerji Tüketimi: ${bestEnergy.algorithm} (${bestEnergy.energy_consumption.toFixed(2)} birim)\n`
+        report += `• En Hızlı Çalışma: ${bestTime.algorithm} (${bestTime.execution_time.toFixed(2)} ms)\n`
+      }
+    }
+
+    report += `
+KISIT ANALİZİ
+=============
+
+Kapasite Kısıtları:
+`
+
+    const totalDroneCapacity = drones.reduce((sum, d) => sum + d.max_weight, 0)
+    const totalDeliveryWeight = deliveries.reduce((sum, d) => sum + d.weight, 0)
+    const capacityUtilization = ((totalDeliveryWeight / totalDroneCapacity) * 100).toFixed(1)
+
+    report += `• Toplam Drone Kapasitesi: ${totalDroneCapacity} kg\n`
+    report += `• Toplam Teslimat Ağırlığı: ${totalDeliveryWeight.toFixed(2)} kg\n`
+    report += `• Kapasite Kullanım Oranı: ${capacityUtilization}%\n`
+
+    // Zaman penceresi analizi
+    const urgentDeliveries = deliveries.filter((d) => d.priority >= 4).length
+    const tightWindows = deliveries.filter((d) => d.time_window[1] - d.time_window[0] < 30).length
+
+    report += `
+Zaman Kısıtları:
+• Acil Teslimatlar (Öncelik 4-5): ${urgentDeliveries} (${((urgentDeliveries / deliveries.length) * 100).toFixed(1)}%)
+• Dar Zaman Penceresi (<30 dk): ${tightWindows}
+• Ortalama Zaman Penceresi: ${(deliveries.reduce((sum, d) => sum + (d.time_window[1] - d.time_window[0]), 0) / deliveries.length).toFixed(1)} dakika
+
+Yasak Bölge Etkisi:
+• Toplam Yasak Bölge: ${noFlyZones.length}
+• Aktif Süre Toplamı: ${noFlyZones.reduce((sum, z) => sum + (z.active_time[1] - z.active_time[0]), 0)} dakika
+• Ortalama Aktif Süre: ${(noFlyZones.reduce((sum, z) => sum + (z.active_time[1] - z.active_time[0]), 0) / noFlyZones.length).toFixed(1)} dakika
+
+ÖNERİLER VE SONUÇ
+================
+`
+
+    if (results.length > 0) {
+      const avgCompletion = results.reduce((sum, r) => sum + r.completed_deliveries, 0) / results.length
+      const completionRate = (avgCompletion / deliveries.length) * 100
+
+      if (completionRate > 90) {
+        report += `✓ Mükemmel performans: Ortalama %${completionRate.toFixed(1)} tamamlanma oranı\n`
+      } else if (completionRate > 75) {
+        report += `✓ İyi performans: Ortalama %${completionRate.toFixed(1)} tamamlanma oranı\n`
+        report += `• Drone kapasitelerini artırmayı düşünün\n`
+      } else {
+        report += `⚠ Geliştirilmesi gereken performans: Ortalama %${completionRate.toFixed(1)} tamamlanma oranı\n`
+        report += `• Daha fazla drone eklemeyi düşünün\n`
+        report += `• Yasak bölge etkilerini minimize edin\n`
+        report += `• Zaman pencerelerini optimize edin\n`
+      }
+    }
+
+    report += `
+Algoritma Önerileri:
+• Gerçek zamanlı uygulamalar için: A* Algoritması (hızlı sonuç)
+• Kısıt yoğun problemler için: CSP Algoritması (garantili kısıt tatmini)
+• Kalite odaklı optimizasyon için: Genetik Algoritma (global optimum arayışı)
+
+Bu rapor ${timestamp} tarihinde otomatik olarak oluşturulmuştur.
+Drone Teslimat Rota Optimizasyonu Sistemi v1.0
+`
+
+    return report
+  }
+
+  const exportReadableReport = () => {
+    const report = generateDetailedReport()
+    const dataBlob = new Blob([report], { type: "text/plain; charset=utf-8" })
+    const url = URL.createObjectURL(dataBlob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = `drone_delivery_report_${currentScenario}_${new Date().toISOString().split("T")[0]}.txt`
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  const exportJSONResults = () => {
+    const jsonData = {
+      timestamp: new Date().toISOString(),
+      scenario: currentScenario,
+      system_info: {
+        drones: drones.length,
+        deliveries: deliveries.length,
+        noFlyZones: noFlyZones.length,
+      },
+      results: results,
+      raw_data: {
+        drones,
+        deliveries,
+        noFlyZones,
+      },
+    }
+
+    const dataStr = JSON.stringify(jsonData, null, 2)
+    const dataBlob = new Blob([dataStr], { type: "application/json" })
+    const url = URL.createObjectURL(dataBlob)
+    const link = document.createElement("a")
+    link.href = url
+    link.download = `drone_delivery_data_${currentScenario}_${new Date().toISOString().split("T")[0]}.json`
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <FileText className="h-5 w-5" />
+          Rapor Oluşturma
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Button onClick={exportReadableReport} className="flex items-center gap-2">
+            <Download className="h-4 w-4" />
+            Detaylı Rapor İndir (.txt)
+          </Button>
+          <Button onClick={exportJSONResults} variant="outline" className="flex items-center gap-2">
+            <BarChart3 className="h-4 w-4" />
+            Ham Veri İndir (.json)
+          </Button>
+        </div>
+
+        <div className="text-sm text-gray-600 space-y-1">
+          <p>
+            <strong>Detaylı Rapor:</strong> Okunabilir format, analiz sonuçları ve öneriler içerir
+          </p>
+          <p>
+            <strong>Ham Veri:</strong> JSON format, teknik analiz ve veri işleme için uygundur
+          </p>
+        </div>
+
+        {results.length > 0 && (
+          <div className="mt-4 p-3 bg-green-50 rounded-lg">
+            <p className="text-sm text-green-700">
+              ✓ {results.length} algoritma sonucu mevcut. Raporlar güncel verilerle oluşturulacak.
+            </p>
+          </div>
+        )}
+      </CardContent>
+    </Card>
+  )
+}
+
+
+
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+"use client"
+
+import type React from "react"
+
+import { useEffect, useRef, useState } from "react"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card"
+import { ZoomIn, ZoomOut, RotateCcw, Play, Pause, FastForward } from "lucide-react"
+
+interface VisualizationProps {
+  drones: any[]
+  deliveries: any[]
+  noFlyZones: any[]
+  routes: { [key: number]: number[] }
+}
+
+interface AnimatedDrone {
+  id: number
+  currentPos: [number, number]
+  targetPos: [number, number]
+  speed: number
+  progress: number
+  route: number[]
+  currentRouteIndex: number
+  isMoving: boolean
+  color: string
+  load: number
+  maxWeight: number
+}
+
+export function Visualization({ drones, deliveries, noFlyZones, routes }: VisualizationProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const [zoom, setZoom] = useState(1)
+  const [offset, setOffset] = useState({ x: 0, y: 0 })
+  const [isDragging, setIsDragging] = useState(false)
+  const [lastMousePos, setLastMousePos] = useState({ x: 0, y: 0 })
+  const [animationTime, setAnimationTime] = useState(0)
+  const [animationSpeed, setAnimationSpeed] = useState(1)
+  const [isPlaying, setIsPlaying] = useState(true)
+  const [animatedDrones, setAnimatedDrones] = useState<AnimatedDrone[]>([])
+  const [completedDeliveries, setCompletedDeliveries] = useState<Set<number>>(new Set())
+
+  const droneColors = ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FFEAA7", "#DDA0DD", "#98FB98", "#F0E68C"]
+
+  // Drone'ları başlangıç durumuna getir
+  useEffect(() => {
+    initializeDrones()
+  }, [drones, routes])
+
+  // Animasyon döngüsü
+  useEffect(() => {
+    let animationFrame: number
+
+    const animate = () => {
+      if (isPlaying) {
+        setAnimationTime((prev) => (prev + 0.2 * animationSpeed) % 120) // 120 dakikalık döngü
+        updateDronePositions()
+      }
+      animationFrame = requestAnimationFrame(animate)
+    }
+
+    // Animasyonu başlat
+    animationFrame = requestAnimationFrame(animate)
+
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame)
+      }
+    }
+  }, [isPlaying, animationSpeed])
+
+  // Görselleştirmeyi çiz
+  useEffect(() => {
+    drawVisualization()
+  }, [drones, deliveries, noFlyZones, routes, zoom, offset, animationTime, animatedDrones, completedDeliveries])
+
+  // Drone'ları başlangıç durumuna getir
+  const initializeDrones = () => {
+    const newAnimatedDrones: AnimatedDrone[] = []
+    setCompletedDeliveries(new Set())
+
+    drones.forEach((drone, index) => {
+      const droneRoutes = routes[drone.id] || []
+
+      newAnimatedDrones.push({
+        id: drone.id,
+        currentPos: [...drone.start_pos] as [number, number],
+        targetPos: [...drone.start_pos] as [number, number],
+        speed: drone.speed,
+        progress: 0,
+        route: droneRoutes,
+        currentRouteIndex: -1, // Henüz rotaya başlamadı
+        isMoving: false,
+        color: droneColors[index % droneColors.length],
+        load: 0,
+        maxWeight: drone.max_weight,
+      })
+    })
+
+    setAnimatedDrones(newAnimatedDrones)
+  }
+
+  // Drone pozisyonlarını güncelle
+  const updateDronePositions = () => {
+    setAnimatedDrones((prevDrones) => {
+      return prevDrones.map((drone) => {
+        // Drone hareket etmiyorsa ve rotada gidecek yer varsa
+        if (!drone.isMoving && drone.currentRouteIndex < drone.route.length - 1) {
+          // Bir sonraki teslimat noktasına geç
+          const nextIndex = drone.currentRouteIndex + 1
+          const nextDeliveryId = drone.route[nextIndex]
+          const nextDelivery = deliveries.find((d) => d.id === nextDeliveryId)
+
+          if (nextDelivery) {
+            // Yasak bölge kontrolü
+            const isPathSafe =
+              !isInNoFlyZone(drone.currentPos, animationTime) && !isInNoFlyZone(nextDelivery.pos, animationTime)
+
+            if (isPathSafe) {
+              return {
+                ...drone,
+                targetPos: [...nextDelivery.pos] as [number, number],
+                progress: 0,
+                isMoving: true,
+                currentRouteIndex: nextIndex,
+                load: drone.load + nextDelivery.weight,
+              }
+            }
+            // Eğer yol güvenli değilse bekle
+            return drone
+          }
+        }
+
+        // Drone hareket ediyorsa
+        if (drone.isMoving) {
+          // İlerleme durumunu güncelle
+          const distance = calculateDistance(drone.currentPos, drone.targetPos)
+          const step = (drone.speed * 0.2 * animationSpeed) / distance
+          const newProgress = Math.min(drone.progress + step, 1)
+
+          // Yeni pozisyonu hesapla
+          const newPos: [number, number] = [
+            drone.currentPos[0] + (drone.targetPos[0] - drone.currentPos[0]) * step,
+            drone.currentPos[1] + (drone.targetPos[1] - drone.currentPos[1]) * step,
+          ]
+
+          // Eğer varış noktasına ulaştıysa
+          if (newProgress >= 1) {
+            // Teslimatı tamamlandı olarak işaretle
+            if (drone.currentRouteIndex >= 0) {
+              const deliveryId = drone.route[drone.currentRouteIndex]
+              setCompletedDeliveries((prev) => new Set([...prev, deliveryId]))
+            }
+
+            return {
+              ...drone,
+              currentPos: [...drone.targetPos] as [number, number],
+              progress: 0,
+              isMoving: false,
+            }
+          }
+
+          // Hala hareket ediyorsa
+          return {
+            ...drone,
+            currentPos: newPos,
+            progress: newProgress,
+          }
+        }
+
+        return drone
+      })
+    })
+  }
+
+  // Dinamik yasak bölge koordinatlarını hesapla
+  const getDynamicZoneCoordinates = (zone: any, currentTime: number): [number, number][] => {
+    if (!zone.is_dynamic || !zone.movement_pattern) {
+      return zone.coordinates
+    }
+
+    const pattern = zone.movement_pattern
+    const timeInCycle = currentTime % 120
+
+    switch (pattern.type) {
+      case "circular":
+        if (pattern.center && pattern.radius) {
+          const angle = (timeInCycle / 30) * 2 * Math.PI * pattern.speed
+          const offsetX = Math.cos(angle) * pattern.radius
+          const offsetY = Math.sin(angle) * pattern.radius
+
+          return zone.coordinates.map(
+            ([x, y]) =>
+              [Math.max(0, Math.min(100, x + offsetX)), Math.max(0, Math.min(100, y + offsetY))] as [number, number],
+          )
+        }
+        break
+
+      case "linear":
+        if (pattern.direction) {
+          const progress = (timeInCycle / 40) % 2
+          const direction = progress > 1 ? 2 - progress : progress
+          const offsetX = pattern.direction[0] * direction * 25
+          const offsetY = pattern.direction[1] * direction * 25
+
+          return zone.coordinates.map(
+            ([x, y]) =>
+              [Math.max(0, Math.min(100, x + offsetX)), Math.max(0, Math.min(100, y + offsetY))] as [number, number],
+          )
+        }
+        break
+
+      case "random":
+        const seed = Math.floor(timeInCycle / 8)
+        const randomX = ((Math.sin(seed * 2.1) * pattern.speed * 20) % 20) - 10
+        const randomY = ((Math.cos(seed * 1.9) * pattern.speed * 20) % 20) - 10
+
+        return zone.coordinates.map(
+          ([x, y]) =>
+            [Math.max(0, Math.min(100, x + randomX)), Math.max(0, Math.min(100, y + randomY))] as [number, number],
+        )
+    }
+
+    return zone.coordinates
+  }
+
+  // Mesafe hesaplama
+  const calculateDistance = (pos1: [number, number], pos2: [number, number]): number => {
+    return Math.sqrt(Math.pow(pos1[0] - pos2[0], 2) + Math.pow(pos1[1] - pos2[1], 2))
+  }
+
+  // Yasak bölge kontrolü
+  const isInNoFlyZone = (pos: [number, number], time: number): boolean => {
+    return noFlyZones.some((zone) => {
+      if (time < zone.active_time[0] || time > zone.active_time[1]) return false
+
+      const currentCoords = zone.is_dynamic ? getDynamicZoneCoordinates(zone, time) : zone.coordinates
+
+      const x = pos[0],
+        y = pos[1]
+      let inside = false
+
+      for (let i = 0, j = currentCoords.length - 1; i < currentCoords.length; j = i++) {
+        if (
+          currentCoords[i][1] > y !== currentCoords[j][1] > y &&
+          x <
+            ((currentCoords[j][0] - currentCoords[i][0]) * (y - currentCoords[i][1])) /
+              (currentCoords[j][1] - currentCoords[i][1]) +
+              currentCoords[i][0]
+        ) {
+          inside = !inside
+        }
+      }
+      return inside
+    })
+  }
+
+  const drawVisualization = () => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+
+    const ctx = canvas.getContext("2d")
+    if (!ctx) return
+
+    // Canvas boyutlarını ayarla
+    const rect = canvas.getBoundingClientRect()
+    canvas.width = rect.width * window.devicePixelRatio
+    canvas.height = rect.height * window.devicePixelRatio
+    ctx.scale(window.devicePixelRatio, window.devicePixelRatio)
+
+    const canvasWidth = rect.width
+    const canvasHeight = rect.height
+
+    // Temizle
+    ctx.clearRect(0, 0, canvasWidth, canvasHeight)
+
+    // Grid çiz
+    drawGrid(ctx, canvasWidth, canvasHeight)
+
+    // Koordinat dönüşümü (100x100 grid -> canvas boyutu)
+    const scaleX = (canvasWidth * zoom) / 100
+    const scaleY = (canvasHeight * zoom) / 100
+
+    // Transform uygula
+    ctx.save()
+    ctx.translate(offset.x, offset.y)
+
+    // Yasak bölgeleri çiz
+    drawNoFlyZones(ctx, scaleX, scaleY)
+
+    // Rotaları çiz
+    drawRoutes(ctx, scaleX, scaleY)
+
+    // Teslimat noktalarını çiz
+    drawDeliveries(ctx, scaleX, scaleY)
+
+    // Drone'ları çiz
+    drawDrones(ctx, scaleX, scaleY)
+
+    ctx.restore()
+
+    // Lejant çiz
+    drawLegend(ctx, canvasWidth, canvasHeight)
+  }
+
+  const drawGrid = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
+    ctx.strokeStyle = "#f0f0f0"
+    ctx.lineWidth = 1
+
+    const gridSize = 20
+    for (let x = 0; x <= width; x += gridSize) {
+      ctx.beginPath()
+      ctx.moveTo(x, 0)
+      ctx.lineTo(x, height)
+      ctx.stroke()
+    }
+
+    for (let y = 0; y <= height; y += gridSize) {
+      ctx.beginPath()
+      ctx.moveTo(0, y)
+      ctx.lineTo(width, y)
+      ctx.stroke()
+    }
+  }
+
+  const drawNoFlyZones = (ctx: CanvasRenderingContext2D, scaleX: number, scaleY: number) => {
+    noFlyZones.forEach((zone, index) => {
+      // Dinamik bölgeler için güncel koordinatları al
+      const currentCoords = zone.is_dynamic ? getDynamicZoneCoordinates(zone, animationTime) : zone.coordinates
+
+      ctx.fillStyle = zone.is_dynamic ? `rgba(255, 100, 100, 0.3)` : `rgba(255, 0, 0, 0.2)`
+      ctx.strokeStyle = zone.is_dynamic ? "#ff6464" : "#ff0000"
+      ctx.lineWidth = zone.is_dynamic ? 3 : 2
+
+      ctx.beginPath()
+      currentCoords.forEach((coord: [number, number], coordIndex: number) => {
+        const x = coord[0] * scaleX
+        const y = coord[1] * scaleY
+        if (coordIndex === 0) {
+          ctx.moveTo(x, y)
+        } else {
+          ctx.lineTo(x, y)
+        }
+      })
+      ctx.closePath()
+      ctx.fill()
+      ctx.stroke()
+
+      // Zone ID ve hareket tipi yazısı
+      const centerX = (currentCoords.reduce((sum, coord) => sum + coord[0], 0) / currentCoords.length) * scaleX
+      const centerY = (currentCoords.reduce((sum, coord) => sum + coord[1], 0) / currentCoords.length) * scaleY
+
+      ctx.fillStyle = zone.is_dynamic ? "#ff6464" : "#ff0000"
+      ctx.font = "bold 12px Arial"
+      ctx.textAlign = "center"
+      ctx.fillText(`Yasak ${zone.id}`, centerX, centerY - 5)
+
+      if (zone.is_dynamic) {
+        ctx.font = "8px Arial"
+        ctx.fillText(`${zone.movement_pattern?.type}`, centerX, centerY + 8)
+      }
+    })
+  }
+
+  const drawDeliveries = (ctx: CanvasRenderingContext2D, scaleX: number, scaleY: number) => {
+    deliveries.forEach((delivery) => {
+      const x = delivery.pos[0] * scaleX
+      const y = delivery.pos[1] * scaleY
+
+      // Öncelik rengine göre
+      const priorityColors = ["#9CA3AF", "#3B82F6", "#10B981", "#F59E0B", "#EF4444", "#DC2626"]
+      const color = priorityColors[delivery.priority] || "#9CA3AF"
+
+      // Teslimat tamamlandı mı?
+      const isCompleted = completedDeliveries.has(delivery.id)
+
+      // Dış halka (öncelik göstergesi)
+      ctx.strokeStyle = isCompleted ? "#22c55e" : color
+      ctx.lineWidth = 3
+      ctx.beginPath()
+      ctx.arc(x, y, 12, 0, 2 * Math.PI)
+      ctx.stroke()
+
+      // İç daire
+      ctx.fillStyle = isCompleted ? "#dcfce7" : "#ffffff"
+      ctx.beginPath()
+      ctx.arc(x, y, 8, 0, 2 * Math.PI)
+      ctx.fill()
+
+      // ID yazısı
+      ctx.fillStyle = isCompleted ? "#22c55e" : color
+      ctx.font = "bold 10px Arial"
+      ctx.textAlign = "center"
+      ctx.fillText(delivery.id.toString(), x, y + 3)
+
+      // Ağırlık bilgisi
+      ctx.fillStyle = "#666666"
+      ctx.font = "8px Arial"
+      ctx.fillText(`${delivery.weight}kg`, x, y + 20)
+
+      // Tamamlandı işareti
+      if (isCompleted) {
+        ctx.fillStyle = "#22c55e"
+        ctx.font = "8px Arial"
+        ctx.fillText("✓", x, y + 30)
+      }
+    })
+  }
+
+  const drawDrones = (ctx: CanvasRenderingContext2D, scaleX: number, scaleY: number) => {
+    animatedDrones.forEach((drone) => {
+      const x = drone.currentPos[0] * scaleX
+      const y = drone.currentPos[1] * scaleY
+      const color = drone.color
+
+      // Drone gövdesi
+      ctx.fillStyle = color
+      ctx.beginPath()
+      ctx.arc(x, y, 15, 0, 2 * Math.PI)
+      ctx.fill()
+
+      // Drone çerçevesi
+      ctx.strokeStyle = "#ffffff"
+      ctx.lineWidth = 2
+      ctx.stroke()
+
+      // Drone ID
+      ctx.fillStyle = "#ffffff"
+      ctx.font = "bold 12px Arial"
+      ctx.textAlign = "center"
+      ctx.fillText(`D${drone.id}`, x, y + 4)
+
+      // Yük bilgisi
+      const loadPercentage = (drone.load / drone.maxWeight) * 100
+      ctx.fillStyle = loadPercentage > 80 ? "#ef4444" : loadPercentage > 50 ? "#f59e0b" : "#22c55e"
+      ctx.font = "8px Arial"
+      ctx.fillText(`${drone.load.toFixed(1)}/${drone.maxWeight}kg`, x, y + 25)
+
+      // Hareket durumu
+      if (drone.isMoving) {
+        // Hareket çizgisi
+        ctx.strokeStyle = color
+        ctx.lineWidth = 2
+        ctx.setLineDash([3, 3])
+        ctx.beginPath()
+        ctx.moveTo(x, y)
+        ctx.lineTo(drone.targetPos[0] * scaleX, drone.targetPos[1] * scaleY)
+        ctx.stroke()
+        ctx.setLineDash([])
+
+        // Hareket göstergesi
+        ctx.fillStyle = "#ffffff"
+        ctx.beginPath()
+        ctx.arc(x, y - 15, 3, 0, 2 * Math.PI)
+        ctx.fill()
+      }
+    })
+  }
+
+  const drawRoutes = (ctx: CanvasRenderingContext2D, scaleX: number, scaleY: number) => {
+    animatedDrones.forEach((drone) => {
+      if (drone.route.length === 0) return
+
+      const color = drone.color
+
+      ctx.strokeStyle = color
+      ctx.lineWidth = 2
+      ctx.setLineDash([8, 4])
+
+      const currentPos = drones.find((d) => d.id === drone.id)?.start_pos || [0, 0]
+      let currentX = currentPos[0] * scaleX
+      let currentY = currentPos[1] * scaleY
+
+      drone.route.forEach((deliveryId, index) => {
+        const delivery = deliveries.find((d) => d.id === deliveryId)
+        if (!delivery) return
+
+        const nextX = delivery.pos[0] * scaleX
+        const nextY = delivery.pos[1] * scaleY
+
+        // Rota çizgisi (tamamlanmış kısımlar daha soluk)
+        ctx.strokeStyle = index <= drone.currentRouteIndex ? `${color}80` : color
+        ctx.beginPath()
+        ctx.moveTo(currentX, currentY)
+        ctx.lineTo(nextX, nextY)
+        ctx.stroke()
+
+        // Sıra numarası
+        const midX = (currentX + nextX) / 2
+        const midY = (currentY + nextY) / 2
+
+        ctx.fillStyle = "#ffffff"
+        ctx.beginPath()
+        ctx.arc(midX, midY, 8, 0, 2 * Math.PI)
+        ctx.fill()
+
+        ctx.strokeStyle = color
+        ctx.lineWidth = 1
+        ctx.stroke()
+
+        ctx.fillStyle = index <= drone.currentRouteIndex ? `${color}80` : color
+        ctx.font = "bold 8px Arial"
+        ctx.textAlign = "center"
+        ctx.fillText((index + 1).toString(), midX, midY + 2)
+
+        currentX = nextX
+        currentY = nextY
+      })
+
+      ctx.setLineDash([])
+    })
+  }
+
+  const drawArrow = (
+    ctx: CanvasRenderingContext2D,
+    fromX: number,
+    fromY: number,
+    toX: number,
+    toY: number,
+    color: string,
+  ) => {
+    const headLength = 10
+    const angle = Math.atan2(toY - fromY, toX - fromX)
+
+    ctx.strokeStyle = color
+    ctx.fillStyle = color
+    ctx.lineWidth = 2
+
+    // Ok başı
+    ctx.beginPath()
+    ctx.moveTo(toX, toY)
+    ctx.lineTo(toX - headLength * Math.cos(angle - Math.PI / 6), toY - headLength * Math.sin(angle - Math.PI / 6))
+    ctx.lineTo(toX - headLength * Math.cos(angle + Math.PI / 6), toY - headLength * Math.sin(angle + Math.PI / 6))
+    ctx.closePath()
+    ctx.fill()
+  }
+
+  const drawLegend = (ctx: CanvasRenderingContext2D, width: number, height: number) => {
+    const legendWidth = 200
+    const legendHeight = 180
+    const legendX = width - legendWidth - 10
+    const legendY = 10
+
+    // Lejant arka planı
+    ctx.fillStyle = "rgba(255, 255, 255, 0.95)"
+    ctx.fillRect(legendX, legendY, legendWidth, legendHeight)
+    ctx.strokeStyle = "#cccccc"
+    ctx.lineWidth = 1
+    ctx.strokeRect(legendX, legendY, legendWidth, legendHeight)
+
+    ctx.fillStyle = "#333333"
+    ctx.font = "bold 12px Arial"
+    ctx.textAlign = "left"
+    ctx.fillText("Lejant", legendX + 10, legendY + 20)
+
+    let yPos = legendY + 35
+
+    // Drone lejantı
+    ctx.fillStyle = droneColors[0]
+    ctx.beginPath()
+    ctx.arc(legendX + 15, yPos, 8, 0, 2 * Math.PI)
+    ctx.fill()
+    ctx.fillStyle = "#333333"
+    ctx.font = "10px Arial"
+    ctx.fillText("Drone", legendX + 30, yPos + 3)
+
+    yPos += 20
+
+    // Teslimat lejantı
+    ctx.strokeStyle = "#EF4444"
+    ctx.lineWidth = 2
+    ctx.beginPath()
+    ctx.arc(legendX + 15, yPos, 8, 0, 2 * Math.PI)
+    ctx.stroke()
+    ctx.fillStyle = "#333333"
+    ctx.fillText("Teslimat Noktası", legendX + 30, yPos + 3)
+
+    yPos += 20
+
+    // Tamamlanmış teslimat lejantı
+    ctx.strokeStyle = "#22c55e"
+    ctx.lineWidth = 2
+    ctx.beginPath()
+    ctx.arc(legendX + 15, yPos, 8, 0, 2 * Math.PI)
+    ctx.stroke()
+    ctx.fillStyle = "#dcfce7"
+    ctx.beginPath()
+    ctx.arc(legendX + 15, yPos, 6, 0, 2 * Math.PI)
+    ctx.fill()
+    ctx.fillStyle = "#333333"
+    ctx.fillText("Tamamlanmış Teslimat", legendX + 30, yPos + 3)
+
+    yPos += 20
+
+    // Yasak bölge lejantı
+    ctx.fillStyle = "rgba(255, 0, 0, 0.3)"
+    ctx.fillRect(legendX + 10, yPos - 5, 10, 10)
+    ctx.strokeStyle = "#ff0000"
+    ctx.lineWidth = 1
+    ctx.strokeRect(legendX + 10, yPos - 5, 10, 10)
+    ctx.fillStyle = "#333333"
+    ctx.fillText("Yasak Bölge", legendX + 30, yPos + 3)
+
+    yPos += 20
+
+    // Dinamik yasak bölge lejantı
+    ctx.fillStyle = "rgba(255, 100, 100, 0.3)"
+    ctx.fillRect(legendX + 10, yPos - 5, 10, 10)
+    ctx.strokeStyle = "#ff6464"
+    ctx.lineWidth = 2
+    ctx.strokeRect(legendX + 10, yPos - 5, 10, 10)
+    ctx.fillStyle = "#333333"
+    ctx.fillText("Dinamik Yasak Bölge", legendX + 30, yPos + 3)
+
+    yPos += 20
+
+    // Rota lejantı
+    ctx.strokeStyle = droneColors[0]
+    ctx.lineWidth = 2
+    ctx.setLineDash([8, 4])
+    ctx.beginPath()
+    ctx.moveTo(legendX + 10, yPos)
+    ctx.lineTo(legendX + 20, yPos)
+    ctx.stroke()
+    ctx.setLineDash([])
+    ctx.fillStyle = "#333333"
+    ctx.fillText("Rota", legendX + 30, yPos + 3)
+
+    yPos += 20
+
+    // Öncelik renkleri
+    ctx.font = "8px Arial"
+    ctx.fillText("Öncelik Seviyeleri:", legendX + 10, yPos)
+    yPos += 12
+
+    const priorityColors = ["#9CA3AF", "#3B82F6", "#10B981", "#F59E0B", "#EF4444"]
+    priorityColors.forEach((color, index) => {
+      if (index < 5) {
+        ctx.fillStyle = color
+        ctx.beginPath()
+        ctx.arc(legendX + 15 + index * 25, yPos, 4, 0, 2 * Math.PI)
+        ctx.fill()
+        ctx.fillStyle = "#333333"
+        ctx.font = "6px Arial"
+        ctx.textAlign = "center"
+        ctx.fillText((index + 1).toString(), legendX + 15 + index * 25, yPos + 10)
+      }
+    })
+  }
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    setIsDragging(true)
+    setLastMousePos({ x: e.clientX, y: e.clientY })
+  }
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging) return
+
+    const deltaX = e.clientX - lastMousePos.x
+    const deltaY = e.clientY - lastMousePos.y
+
+    setOffset((prev) => ({
+      x: prev.x + deltaX,
+      y: prev.y + deltaY,
+    }))
+
+    setLastMousePos({ x: e.clientX, y: e.clientY })
+  }
+
+  const handleMouseUp = () => {
+    setIsDragging(false)
+  }
+
+  const handleZoomIn = () => {
+    setZoom((prev) => Math.min(prev * 1.2, 3))
+  }
+
+  const handleZoomOut = () => {
+    setZoom((prev) => Math.max(prev / 1.2, 0.5))
+  }
+
+  const handleReset = () => {
+    setZoom(1)
+    setOffset({ x: 0, y: 0 })
+  }
+
+  const togglePlayPause = () => {
+    setIsPlaying(!isPlaying)
+  }
+
+  const changeSpeed = () => {
+    setAnimationSpeed((prev) => (prev >= 2 ? 0.5 : prev + 0.5))
+  }
+
+  const resetSimulation = () => {
+    setAnimationTime(0)
+    initializeDrones()
+  }
+
+  return (
+    <div className="space-y-4">
+      {/* Kontrol Paneli */}
+      <div className="flex justify-between items-center">
+        <div className="flex gap-2">
+          <Button onClick={handleZoomIn} size="sm" variant="outline">
+            <ZoomIn className="h-4 w-4" />
+          </Button>
+          <Button onClick={handleZoomOut} size="sm" variant="outline">
+            <ZoomOut className="h-4 w-4" />
+          </Button>
+          <Button onClick={handleReset} size="sm" variant="outline">
+            <RotateCcw className="h-4 w-4" />
+          </Button>
+        </div>
+
+        {/* Animasyon Kontrolleri */}
+        <div className="flex gap-2">
+          <Button onClick={togglePlayPause} size="sm" variant={isPlaying ? "default" : "outline"}>
+            {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+          </Button>
+          <Button onClick={changeSpeed} size="sm" variant="outline">
+            <FastForward className="h-4 w-4" />
+            <span className="ml-1">{animationSpeed}x</span>
+          </Button>
+          <Button onClick={resetSimulation} size="sm" variant="outline">
+            <RotateCcw className="h-4 w-4" />
+            <span className="ml-1">Sıfırla</span>
+          </Button>
+        </div>
+
+        {/* Durum Bilgisi */}
+        <div className="flex gap-2">
+          <Badge variant="outline">Zoom: {(zoom * 100).toFixed(0)}%</Badge>
+          <Badge variant="outline">Zaman: {animationTime.toFixed(1)}dk</Badge>
+          <Badge variant="success">
+            Tamamlanan: {completedDeliveries.size}/{deliveries.length}
+          </Badge>
+        </div>
+      </div>
+
+      {/* Canvas */}
+      <div className="border border-gray-300 rounded-lg overflow-hidden bg-white">
+        <canvas
+          ref={canvasRef}
+          className="w-full h-96 cursor-move"
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+        />
+      </div>
+
+      {/* Bilgi Paneli */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <Card>
+          <CardContent className="pt-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-blue-600">{drones.length}</div>
+              <div className="text-sm text-gray-600">Aktif Drone</div>
+            </div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="pt-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-green-600">{deliveries.length}</div>
+              <div className="text-sm text-gray-600">Teslimat Noktası</div>
+            </div>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardContent className="pt-4">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-red-600">{noFlyZones.length}</div>
+              <div className="text-sm text-gray-600">Yasak Bölge</div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  )
+}
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------
+
+
+
+
+
+
+"use client"
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Settings, Users, MapPin, Shield } from "lucide-react"
+
+interface ScenarioSelectorProps {
+  currentScenario: string
+  onScenarioChange: (scenario: string) => void
+  drones: any[]
+  deliveries: any[]
+  noFlyZones: any[]
+}
+
+export function ScenarioSelector({
+  currentScenario,
+  onScenarioChange,
+  drones,
+  deliveries,
+  noFlyZones,
+}: ScenarioSelectorProps) {
+  const scenarios = {
+    scenario1: {
+      name: "Senaryo 1 - Temel Test",
+      description: "5 drone, 20 teslimat noktası, 2 statik yasak bölge",
+      complexity: "Düşük",
+      droneCount: 5,
+      deliveryCount: 20,
+      noFlyZoneCount: 2,
+      characteristics: [
+        "Verilen veri setine göre temel senaryo",
+        "2 statik yasak bölge",
+        "Temel kısıt optimizasyonu",
+        "Yasak bölge kaçınma algoritması",
+      ],
+    },
+    scenario2: {
+      name: "Senaryo 2 - Gelişmiş Test",
+      description: "10 drone, 50 teslimat noktası, 5 dinamik yasak bölge",
+      complexity: "Yüksek",
+      droneCount: 10,
+      deliveryCount: 50,
+      noFlyZoneCount: 5,
+      characteristics: [
+        "Verilen veri setinin genişletilmiş versiyonu",
+        "5 dinamik yasak bölge (hareket eden)",
+        "Karmaşık kısıt optimizasyonu",
+        "Gelişmiş yasak bölge kaçınma sistemi",
+      ],
+    },
+  }
+
+  const currentScenarioData = scenarios[currentScenario as keyof typeof scenarios]
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2">
+          <Settings className="h-5 w-5" />
+          Test Senaryosu Seçimi
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Senaryo Seçici */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium">Aktif Senaryo:</label>
+            <Select value={currentScenario} onValueChange={onScenarioChange}>
+              <SelectTrigger>
+                <SelectValue placeholder="Senaryo seçin" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="scenario1">
+                  <div className="flex items-center gap-2">
+                    <Badge variant="outline">Temel</Badge>
+                    Senaryo 1
+                  </div>
+                </SelectItem>
+                <SelectItem value="scenario2">
+                  <div className="flex items-center gap-2">
+                    <Badge variant="destructive">Gelişmiş</Badge>
+                    Senaryo 2
+                  </div>
+                </SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          {/* Senaryo Bilgileri */}
+          <div className="space-y-3">
+            <div className="flex items-center justify-between">
+              <span className="text-sm font-medium">Karmaşıklık:</span>
+              <Badge variant={currentScenarioData.complexity === "Düşük" ? "secondary" : "destructive"}>
+                {currentScenarioData.complexity}
+              </Badge>
+            </div>
+            <p className="text-sm text-gray-600">{currentScenarioData.description}</p>
+          </div>
+        </div>
+
+        {/* Mevcut Senaryo Detayları */}
+        <div className="border-t pt-4">
+          <h4 className="font-medium mb-3">{currentScenarioData.name}</h4>
+
+          {/* Metrikler */}
+          <div className="grid grid-cols-3 gap-4 mb-4">
+            <div className="text-center p-3 bg-blue-50 rounded-lg">
+              <Users className="h-6 w-6 mx-auto mb-1 text-blue-600" />
+              <div className="text-lg font-bold text-blue-600">{drones.length}</div>
+              <div className="text-xs text-gray-600">Drone</div>
+            </div>
+            <div className="text-center p-3 bg-green-50 rounded-lg">
+              <MapPin className="h-6 w-6 mx-auto mb-1 text-green-600" />
+              <div className="text-lg font-bold text-green-600">{deliveries.length}</div>
+              <div className="text-xs text-gray-600">Teslimat</div>
+            </div>
+            <div className="text-center p-3 bg-red-50 rounded-lg">
+              <Shield className="h-6 w-6 mx-auto mb-1 text-red-600" />
+              <div className="text-lg font-bold text-red-600">{noFlyZones.length}</div>
+              <div className="text-xs text-gray-600">Yasak Bölge</div>
+            </div>
+          </div>
+
+          {/* Özellikler */}
+          <div className="space-y-2">
+            <h5 className="text-sm font-medium">Senaryo Özellikleri:</h5>
+            <ul className="text-sm text-gray-600 space-y-1">
+              {currentScenarioData.characteristics.map((char, index) => (
+                <li key={index} className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-blue-500 rounded-full"></div>
+                  {char}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Yasak Bölge Durumu */}
+          {currentScenario === "scenario2" && (
+            <div className="mt-4 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
+              <div className="flex items-center gap-2 mb-2">
+                <Shield className="h-4 w-4 text-yellow-600" />
+                <span className="text-sm font-medium text-yellow-800">Dinamik Yasak Bölgeler</span>
+              </div>
+              <p className="text-xs text-yellow-700">
+                Bu senaryoda yasak bölgeler zaman içinde hareket eder. Drone'lar bu hareketli bölgeleri gerçek zamanlı
+                olarak takip ederek güvenli rotalar planlar.
+              </p>
+            </div>
+          )}
+        </div>
+      </CardContent>
+    </Card>
+  )
+}
+
+
+
+
+
+
+---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
